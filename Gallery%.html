@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{
+        margin:0px;
+        padding:0px;
+
+    }
+    body{
+            background-color: rgb(182, 207, 240);
+
+            margin-left: 90px;
+            margin-top: 20px;
+    }
+    .container img {
+       position:absolute;
+       top: 0px;
+       left: 0px;
+       display: block; 
+       margin-left: 0%;
+       margin-right: auto; 
+       max-width:20%;
+       max-height: 15%;
+       
+    }
+    .container ul{
+        position: sticky;
+        list-style: none;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        overflow: auto;
+        }
+ul .active  {
+        background-color:#4CAF50;
+    }
+    .container ul li{
+      
+        display: fixed;
+        background-color:transparent;
+        width: 120px;
+        border:3px rgb(19, 6, 97);
+        border-radius:27px;
+        height: 40px ;
+        line-height: 50px;
+        text-align:center;
+        float: left;
+        color: rgb(27, 6, 145);
+        font-size: 11px;
+        margin-top: 0%;
+        
+    } 
+    .container ul li:hover{
+        background-color: rgb(243, 140, 23);
+        
+    }
+    .container ul ul{
+        display: none;
+
+    } 
+
+    .container ul li:hover > ul {
+        display:block;
+    }
+    a{
+          text-decoration: none;
+        } 
+        
+        
+* {box-sizing: border-box;
+margin-top: 40px;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+
+  
+
+ top: 0px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 1s;
+  transition: ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+  <section>
+  <div class='container'>
+    <img src="Logo.jpg.png" alt="">
+<nav>
+<ul>
+   
+<li class="active"><a href="Assignmnt.html">HOME</a></li> 
+<li ><a href="#">ABOUT US</a>
+    <ul> 
+    <li><a href="Aboutus20%.html">Mission</a></li>
+    <li><a href="Aboutus20%.html">Vission</a></li>
+    <li><a href="Aboutus20%.html">core value</a></li>
+    <li><a href="Aboutus20%.html">Strategic plan</a></li>
+</ul></li>
+<li><a href="Programs10%.html">Programs</a>
+<ul>
+    <li><a href="Programs10%.html">Kindergaten</a></li>
+    <li><a href="Programs10%.html">Daycare</a></li>
+    
+</ul></li>
+<li><a href="Act.html">Activities</a>s
+<ul>
+    <li>Talent training</li>
+    <li>Sport training</li>
+    <li>Academic tours</li>
+</ul></li>
+<li><a href="Onlinelearn%">Online class learning</a></li>
+<li><a href="Information20%.html">Information</a>
+<ul>
+    <li><a href="Information20%.html">Fees Structure</a></li>
+    <li><a href="Information20%.html">Menu</a></li>
+    <li><a href="Information20%.html">Term dates</a></li>
+    <li><a href="Information20%.html">Policy</a></li>
+</ul></li>
+<li>Gallery</li>
+<li><a href="Contactus%.html">Contact us</a></li> 
+</ul>
+</nav>
+</div></section>
+</div>
+<!-----slider----> 
+
+
+<h2>Schools Gallery</h2>
+<p>All that pertains us</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="Images/Kids/Vision14.jpg.jpg" style="width: 100%">
+  <div class="text">Our esteemed staff</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="Images/Kids/Vision15.jpg.jpg" style="width: 100%">
+  <div class="text">ART</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="Images/Kids/vision11.jpg.jpg" style="width: 100%">
+  <div class="text">WRITING</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="Images/Kids/vision10.jpg.jpg" style="width: 100%">
+  <div class="text">READING</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5/ 10</div>
+  <img src="Images/Kids/vision13.jpg.jpg" style="width: 100%">
+  <div class="text">SOCIAL SCIENCE</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="Images/Kids/vision12.jpg.jpg" style="width: 100%">
+  <div class="text">Playgroung</div>
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="Images/Kids/vision8.jpg.jpg" style="width: 100%">
+    <div class="text">Creativity</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">8/ 10</div>
+    <img src="Images/Kids/Vision17.jpg.jpg" style="width: 100%">
+    <div class="text">Transport</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">9/ 10</div>
+    <img src="Images/Kids/Vision16.jpg.jpg" style="width: 100%">
+    <div class="text">Field play</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="Images/Kids/vision12.jpg.jpg" style="width: 100%">
+    <div class="text">CHILD PLAY</div>
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>  
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

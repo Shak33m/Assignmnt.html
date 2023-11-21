@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Javascript</title>
+
+        <style>
+*{
+            margin:0px;
+            padding:0px;
+
+        }
+        body{
+            background-color: rgb(182, 207, 240);
+
+            margin-left: 90px;
+            margin-top: 20px;
+        }
+        .container img {
+           position:absolute;
+           top: 0px;
+           left: 0px;
+           display: block; 
+           margin-left: 0%;
+           margin-right: auto; 
+           max-width:20%;
+           max-height: 15%;
+           
+        }
+        .container ul{
+            position: sticky;
+            list-style: none;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            overflow:auto;
+            }
+    ul .active  {
+            background-color: rgb(243, 140, 23);
+        }
+        .container ul li{
+            
+            display: fixed;
+            background: color #3498db;;
+            width: 120px;
+            border:3px rgb(19, 6, 97);
+            border-radius:27px;
+            height: 60px ;
+            line-height: 50px;
+            text-align:center;
+            float: left;
+            color: rgb(27, 6, 145);
+            font-size: 11px;
+            
+        } 
+        .container ul li:hover{
+            background-color: rgb(243, 140, 23);
+            
+        }
+        .container ul ul{
+            display: none;
+
+        } 
+
+        .container ul li:hover > ul {
+            display:block;
+        }
+        .containers{
+        
+        width:80%;
+        margin:0 auto;
+        padding:2%;
+
+        }
+       h1{
+        border-bottom: 4px solid orange ;
+            font-size: 20px;
+            width: 10%;
+            color: #2f3542;
+       }
+       .Calculator p{
+           color: rgb(4, 0, 255);
+       }
+       a{
+           text-decoration: none;
+       }
+       .social ul{
+           list-style-type:none;
+       }
+       .social ul li{
+           position: center;
+       }
+       .social{
+           border-bottom: 0px;
+       }
+       .containers ul li{
+           display:inline;
+           align-items: center;
+       }
+       .Calculator input[type="text"]{
+           width:20%;
+           border:none;
+           padding: 1%;
+           font-size: 1rem;
+       }
+        </style>
+<script>
+
+    function division(){
+        var a,b,c;
+        a=Number(document.getElementById("First").value);
+        b=Number(document.getElementById("Second").value);
+        c=a/b;
+        document.getElementById("Answer").value=c;
+    }
+
+    function add(){
+        var a,b,c;
+        a=Number(document.getElementById("First").value);
+        b=Number(document.getElementById("Second").value);
+        c=a + b;
+        document.getElementById("Answer").value=c;
+    }
+
+    function subtract(){
+        var a,b,c;
+        a=Number(document.getElementById("First").value);
+        b=Number(document.getElementById("Second").value);
+        c=a-b;
+        document.getElementById("Answer").value=c;
+    }
+</script></head>
+<body>
+    
+        <section>
+        <div class='container'>
+            <img src="Logo.jpg.png" alt="">
+    <nav>
+        <ul>
+           
+      <li class="active"><a href="Assignmnt.html">HOME</a></li> 
+        <li ><a href="#">ABOUT US</a>
+            <ul> 
+            <li><a href="Aboutus20%.html">Mission</a></li>
+            <li><a href="Aboutus20%.html">Vission</a></li>
+            <li><a href="Aboutus20%.html">core value</a></li>
+            <li><a href="Aboutus20%.html">Strategic plan</a></li>
+        </ul></li>
+        <li><a href="Programs10%.html">Programs</a>
+        <ul>
+            <li><a href="Programs10%.html">Kindergaten</a></li>
+            <li><a href="Programs10%.html">Daycare</a></li>
+            
+        </ul></li>
+        <li>Activities
+        <ul>
+            <li>Talent training</li>
+            <li>Sport training</li>
+            <li>Academic tours</li>
+        </ul></li>
+        <li>Online class learning</li>
+        <li><a href="#">Information</a>
+        <ul>
+            <li><a href="Information20%.html">Fees Structure</a></li>
+            <li><a href="Information20%.html">Menu</a></li>
+            <li><a href="Information20%.html">Term dates</a></li>
+            <li><a href="Information20%.html">Policy</a></li>
+        </ul></li>
+        <li><a href="Gallery%.html">Gallery</li></a>
+        <li><a href="Contactus%.html">Contact us</li></a> 
+    </ul>
+</nav>
+</div>
+<section class="Fruits">
+    <div class="containers">
+        <h1>FRUITS</h1>
+        <p>Let's learn the different types of fruits</p><br>
+        <button onclick="document.getElementById('myImage').src='Images/Fruits'">Banana </button>
+    <img id="myImage" src="Images/Fruits/Banana.jpg" style="width:100px">
+   <button onclick="document.getElementById('myImage').src='Image/Fruits'">Mangos</button>
+    <img id="myImage" src="Images/Fruits/Mangos.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Orange</button>
+    <img id="myImage" src="Images/Fruits/Orange.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Strawberries</button>
+    <img id="myImage" src="Images/Fruits/Strawberries.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Pineapple</button>
+    <img id="myImage" src="Images/Fruits/Pineapple.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Pear</button>
+    <img id="myImage" src="Images/Fruits/Pear.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Greengapes</button>
+    <img id="myImage" src="Images/Fruits/Greengrapes.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Kiwi</button>
+    <img id="myImage" src="Images/Fruits/Kiwi.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Watermelon</button>
+    <img id="myImage" src="Images/Fruits/Watermelon.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Plums</button>
+    <img id="myImage" src="Images/Fruits/Plums.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Ovacados</button>
+    <img id="myImage" src="Images/Fruits/Ovacado.jpeg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Orange</button>
+    <img id="myImage" src="Images/Fruits/Orange.jpg" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='Image/Fruits'">Strawberries</button>
+    <img id="myImage" src="Images/Fruits/Strawberries.jpg" style="width:100px">
+ 
+    </div></section>
+    <section class="Aphabets">
+        <div class="containers">
+            <h1>Alphabets</h1>
+            <p>Let's learn alphabets</p>
+            <button onclick="document.getElementById('Letters').src='Image/APHABETS'">A</button>
+        <img id="Letters" src="Images/Letters/Alphabets/A.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/ALPHABETS'">B</button>
+        <img id="Letters" src="Images/Letters/Alphabets/B.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/ALPHABETS'">C</button>
+        <img id="Letters" src="Images/Letters/Alphabets/C.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/ALPHABETS'">D</button>
+        <img id="Letters" src="Images/Letters/Alphabets/D.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/ALPHABETS'">E</button>
+        <img id="Letters" src="Images/Letters/Alphabets/E.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">F</button>
+        <img id="Letters" src="Images/Letters/Alphabets/F.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">G</button>
+        <img id="Letters" src="Images/Letters/Alphabets/G.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">H</button>
+        <img id="Letters" src="Images/Letters/Alphabets/H.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">I</button>
+        <img id="Letters" src="Images/Letters/Alphabets/I.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">J</button>
+        <img id="Letters" src="Images/Letters/Alphabets/J.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">K</button>
+        <img id="Letters" src="Images/Letters/Alphabets/K.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">L</button>
+        <img id="Letters" src="Images/Letters/Alphabets/L.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">M</button>
+        <img id="Letters" src="Images/Letters/Alphabets/M.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">N</button>
+        <img id="Letters" src="Images/Letters/Alphabets/N.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">O</button>
+        <img id="Letters" src="Images/Letters/Alphabets/O.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">P</button>
+        <img id="Letters" src="Images/Letters/Alphabets/P.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">Q</button>
+        <img id="Letters" src="Images/Letters/Alphabets/Q.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">R</button>
+        <img id="Letters" src="Images/Letters/Alphabets/R.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">S</button>
+        <img id="Letters" src="Images/Letters/Alphabets/S.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">T</button>
+        <img id="Letters" src="Images/Letters/Alphabets/T.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">U</button>
+        <img id="Letters" src="Images/Letters/Alphabets/U.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">V</button>
+        <img id="Letters" src="Images/Letters/Alphabets/V.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">W</button>
+        <img id="Letters" src="Images/Letters/Alphabets/W.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">X</button>
+        <img id="Letters" src="Images/Letters/Alphabets/X.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">Y</button>
+        <img id="Letters" src="Images/Letters/Alphabets/Y.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">Z</button>
+        <img id="Letters" src="Images/Letters/Alphabets/Z.jpg" style="width:100px">
+       
+        </div>
+    </section>
+    <section class="Numbers">
+    <div class="containers">
+        <h1>Numbers</h1>
+        <button onclick="document.getElementById('Letters').src='Images/Numbers/Num0.jpg'">ZERO</button>
+        <img id="Letters" src="Images/Numbers/Num0.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ONE</button>
+        <img id="Letters" src="Images/Numbers/Num1.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ZERO</button>
+        <img id="Letters" src="Images/Numbers/Num2.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ONE</button>
+        <img id="Letters" src="Images/Numbers/Num3.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ZERO</button>
+        <img id="Letters" src="Images/Numbers/Num4.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ONE</button>
+        <img id="Letters" src="Images/Numbers/Num5.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ZERO</button>
+        <img id="Letters" src="Images/Numbers/Num6.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ONE</button>
+        <img id="Letters" src="Images/Numbers/Num7.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ZERO</button>
+        <img id="Letters" src="Images/Numbers/Num8.jpg" style="width:100px">
+        <button onclick="document.getElementById('Letters').src='Image/vision6.jpg.jpg'">ONE</button>
+        <img id="Letters" src="Images/Numbers/Num9.jpg" style="width:100px">
+        
+    </div></section>
+    <section class="Calculator">
+    <div class="containers">
+        <h1>Let's do Math</h1>
+        <p>Enter the <sup><b>First number</b></sup></p>
+        <input type="text" id="First" placeholder="Number">
+        <p>Enter the <sup><b>Second number</b></sup></p>
+        <input type="text" id="Second" placeholder="Number">
+        <p><button onclick="add()">Add</button></p>
+        <p><button onclick="subtract()">Subtract</button></p>
+        <p><button onclick="division()">Divide</button></p>
+        <p><b>Answer</b><input id="Answer"> </p>
+    
+    </div></section>
+    <section class="Social">
+        <div class="containers">
+            <ul>
+                <li><a href="#"><img src="Images/Icons/fb.png"/></a></li>
+                <li><a href="#"><img src="Images/Icons/Ig.png"/></a></li>
+                <li><a href="#"><img src="Images/Icons/Twitter.png"/></a></li>
+            </ul>
+        </div>
+    </section>
+    <section classs="footer">
+        <div class="containers">
+            <p>All rights Reserved@VisionAcademy2021</p>
+        </div>
+    </section>
+</body>
+</html>

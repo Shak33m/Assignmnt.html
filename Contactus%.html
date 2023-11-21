@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<style>
+    
+        *{
+            margin:0px;
+            padding:0px;
+
+        }
+        body{
+            background-color:rgb(182, 207, 240);
+            margin-left: 90px;
+            margin-top: 20px;
+        }
+        .container img {
+            position: absolute;
+           display: block; 
+           top: 0px;
+           left: 0px;
+           margin-left: 0%;
+           margin-right: auto; 
+           max-width:20%;
+           max-height: 15%;
+           
+        }
+        .container ul{
+            list-style: none;
+            top: 0px;
+            left: 0px;
+
+        }
+        .container ul li{
+            display: fixed;
+            background-color: rgb(46, 190, 247);
+            width: 120px;
+            border:3px rgb(19, 6, 97);
+            border-radius:27px;
+            height: 60px ;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: rgb(27, 6, 145);
+            font-size: 12px;
+        } 
+        .container ul li:hover{
+            background-color: rgb(243, 140, 23);
+            
+        }
+        .container ul ul{
+            display: none;
+
+        } 
+
+        .container ul li:hover > ul {
+            display:block;
+        }
+        .containerwrapper {
+    display: inline-block;
+    width:calc(100%/3);
+    margin:0px -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+a{
+          text-decoration: none;
+        } 
+       
+        
+.Telephone:hover{
+    background: #ddd;
+}
+.Email:hover{
+    background: #ddd;
+}
+
+.Telephone h2
+{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #3498db;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+.Email h2{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #3498db;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+label{
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+}
+input{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #797979;
+    font-size: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+button{
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    background-color: #3498db;
+}
+
+
+    </style>
+    
+    <body>
+        
+        <div class='container'>
+            <img src="Logo.jpg.png" alt="">
+    <nav>
+        <ul>
+           
+      <li class="active"><a href="Assignmnt.html">HOME</a></li> 
+        <li ><a href="#">ABOUT US</a>
+            <ul> 
+            <li><a href="Aboutus20%.html">Mission</a></li>
+            <li><a href="Aboutus20%.html">Vission</a></li>
+            <li><a href="Aboutus20%.html">core value</a></li>
+            <li><a href="Aboutus20%.html">Strategic plan</a></li>
+        </ul></li>
+        <li><a href="Programs10%.html">Programs</a>
+        <ul><li><a href="Programs10%.html">Kindergaten</a></li>
+            <li><a href="Programs10%.html">Daycare</a></li>
+            
+        </ul></li>
+        <li><a href="Act.html">Activities</a>
+        <ul>
+            <li>Talent training</li>
+            <li>Sport training</li>
+            <li>Academic tours</li>
+        </ul></li>
+        <li><a href="Onlinelearn%.html">Online class learning</a></li>
+        <li><a href="Information20%.html">Information</a>
+        <ul>
+       <li><a href="Information20%.html">Fees Structure</a></li>
+                <li><a href="Information20%.html">Menu</a></li>
+                <li><a href="Information20%.html">Term dates</a></li>
+                <li><a href="Information20%.html">Policy</a></li></li>
+           
+        </ul></li>
+        <li>Gallery</li>
+        <li>Contact us</li> 
+    </ul>
+    </div>
+    <!-----slider----> 
+    
+</nav>
+ 
+
+
+<main>
+<div class="containerwrapper">
+<div class="Telephone">
+    <h2>Telephone:</h2>
+    <p>
+        +254787900521 
+    </p>
+</div>
+
+<div class="Email">
+    <h2>Email address</h2>
+    <p>
+         visionacademy@21.ac.ke
+    </p>
+</div></div>
+
+<div class="Form">
+    <form action="swipe.html" methode="post">
+        <div>
+            <label for="Username">Username</label>
+            <input type="password" name="Password" placeholder="Username">
+            <span></span>
+
+        </div>
+        <button id="log-in">Log_In</button>
+    </form>
+</div>
+</main></body>
+</html>
+
+
